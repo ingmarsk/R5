@@ -1,2 +1,10 @@
-%h1 StaticPages#help
-%p Find me in app/views/static_pages/help.html.erb
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Help | Blogging
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  %body
+    %h1 This is the Help page
