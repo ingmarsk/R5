@@ -235,7 +235,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap (~> 4.0)
+  bootstrap (~> 4.0.0)
   coffee-rails (~> 4.2)
   guard (= 2.13.0)
   guard-minitest (= 2.4.4)

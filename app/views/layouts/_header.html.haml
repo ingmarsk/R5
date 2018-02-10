@@ -1,0 +1,10 @@
+%nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.sticky-top
+  %a.navbar-brand{href: '/'} Blogging
+  #navbarNav
+    %ul.navbar-nav
+      %li.nav-item
+        = link_to 'Home', root_path, class: 'nav-link'
+      %li.nav-item
+        = link_to 'Help', help_path, class: 'nav-link'
+      %li.nav-item
+        = link_to 'Sign up', '#', class: 'btn btn-outline-success'
