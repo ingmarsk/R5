@@ -1,7 +1,8 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
-
   def setup
     @base_title = 'Blogging'
   end
