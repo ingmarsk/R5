@@ -7,11 +7,13 @@ end
 
 gem 'bcrypt',           '~> 3.1', '>= 3.1.11'
 gem 'bootstrap',        '~> 4.0.0'
+gem 'brakeman',         '~> 4.2'
 gem 'coffee-rails',     '~> 4.2'
 gem 'haml-rails',       '~> 1.0'
 gem 'jbuilder',         '~> 2.5'
 gem 'jquery-rails',     '~> 4.3', '>= 4.3.1'
 gem 'mysql2',           '~> 0.4.10'
+gem 'pry-byebug',       '~> 3.6'
 gem 'puma',             '~> 3.7'
 gem 'rails',            '~> 5.1.4'
 gem 'sass-rails',       '~> 5.0'
