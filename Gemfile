@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'bcrypt',           '~> 3.1', '>= 3.1.11'
 gem 'bootstrap',        '~> 4.0.0'
 gem 'coffee-rails',     '~> 4.2'
 gem 'haml-rails',       '~> 1.0'
@@ -34,4 +35,4 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+gem 'tzinfo-data', platforms: %i(mingw mswin x64_mingw jruby)
