@@ -3,8 +3,20 @@
   #navbarNav
     %ul.navbar-nav
       %li.nav-item
-        = link_to 'Home', root_path, class: 'nav-link'
-      %li.nav-item
         = link_to 'Help', help_path, class: 'nav-link'
-      %li.nav-item
-        = link_to 'Sign up', signup_path, class: 'btn btn-outline-success'
+      - if logged_in?
+        %li.nav-item
+          = link_to 'Users', '#', class: 'nav-link'
+        %li.nav-item
+          = link_to 'Account', '#', class: 'nav-link'
+        %li.nav-item
+          = link_to 'Profile', current_user, class: 'nav-link'
+        %li.nav-item
+          = link_to 'Settings', '#', class: 'nav-link'
+        %li.nav-item
+          = link_to 'Log out', logout_path, method: :delete, class: 'nav-link'
+      - else
+        %li.nav-item
+          = link_to 'Log in', login_path, class: 'nav-link'
+        %li.nav-item
+          = link_to 'Sign up', signup_path, class: 'btn btn-outline-success'

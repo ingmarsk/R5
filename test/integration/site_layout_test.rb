@@ -7,7 +7,7 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     assert_select 'meta[content="text/html; charset=UTF-8"]'
     assert_select 'title'
     assert_select 'div.container'
-    assert_select 'a[href=?]', root_path, count: 2
+    assert_select 'a[href=?]', root_path, count: 1
     assert_select 'a[href=?]', help_path
     assert_select 'a[href=?]', about_path
     assert_select 'a[href=?]', contact_path
